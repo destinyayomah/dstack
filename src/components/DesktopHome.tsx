@@ -24,9 +24,9 @@ const DesktopHome = ({ isMenuOpen, setIsMenuOpen }: Props) => {
         <Stack bg={bgSecondary} justifyContent='space-between' padding={{ base: '10px 5%', lg: '50px 5%' }} direction={{ base: 'column', md: 'row' }} height='100vh' maxH='100vh' overflow='hidden'>
             <VStack justifyContent='space-between' flex='1'>
                 <Box>
-                    <Heading width='100%' fontSize={{ base: '28px', lg: '48px' }} margin='15px 0' color='white' fontWeight='500'>Hello, I'm <br /> Destiny Ayomah.</Heading>
+                    <Heading width='100%' fontSize={{ base: '28px',  lg: '48px' }} margin='15px 0' color='white' fontWeight='500'>Hello, I'm <br /> Destiny Ayomah.</Heading>
 
-                    <Text width='70%' fontWeight='400' fontSize={{ base: '12px', lg: '16px' }} color={textPrimary} lineHeight='2'>
+                    <Text fontWeight='400' fontSize={{ base: '14px' }} maxW='90%' color={textPrimary} lineHeight='2'>
                         I'm a <Text display='inline' color='white'>Full Stack Software Engineer</Text>, close on more than <Text display='inline' color='white'>half a decade</Text> of experience. I've got over <Text display='inline' color='white'>100 websites</Text> live utilizing my <Text display='inline' color='white'>problem solving skills</Text> with <Text display='inline' color='white'>HTML, CSS, Javascript, Typescript, JQuery, React, MySQL, MongoDB, Express, NodeJs, NestJs, Php, Flutter and Dart!</Text>
                     </Text>
                 </Box>
@@ -50,7 +50,7 @@ const DesktopHome = ({ isMenuOpen, setIsMenuOpen }: Props) => {
                     </Link>
 
                     <Link
-                        to="/"
+                        to="/article"
                         onMouseEnter={() => setArticle(true)}
                         onMouseLeave={() => setArticle(false)}
                     >

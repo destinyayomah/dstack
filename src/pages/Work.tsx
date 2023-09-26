@@ -22,14 +22,15 @@ const Work = ({ isMenuOpen, setIsMenuOpen }: Props) => {
     }
 
     return <>
-        <Box padding='15px 5%'>
+        <Box padding='15px 5%' overflow='auto' css={hiddenScrollbar} >
             <Show below="md">
                 <HStack>
                     <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
                 </HStack>
             </Show>
 
-            <VStack flex='1' marginTop='30px' color={textPrimary} alignItems='start' overflow='auto' css={hiddenScrollbar}>
+            <VStack flex='1' marginTop='30px' color={textPrimary} alignItems='start'>
+
                 <Text fontWeight='700' fontSize={{ base: '12px', md: '16px' }}>FEATURED</Text>
 
                 <VStack marginTop='20px' gap='20px' width='100%'>
