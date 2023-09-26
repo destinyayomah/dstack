@@ -1,7 +1,6 @@
 import { Hide, Show } from "@chakra-ui/react"
 import { MobileHome } from "../components/MobileHome"
 import DesktopHome from "../components/DesktopHome"
-import { useState } from "react";
 
 interface Props {
     isMenuOpen: boolean,
