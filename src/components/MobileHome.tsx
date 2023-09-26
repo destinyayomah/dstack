@@ -20,7 +20,7 @@ export const MobileHome = ({ isMenuOpen, setIsMenuOpen }: Props) => {
         <VStack padding='15px 5%' bg={bgSecondary} height='100vh' justifyContent='space-between'>
             <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
-            <Avatar src={destinyAlt} size='xl' />
+            <Avatar src={destinyAlt} size='2xl' />
 
             <Heading width='100%' fontSize='24px' textAlign='center' margin='15px 0' color='white' fontWeight='500'>Hello, I'm <br /> Destiny Ayomah.</Heading>
 

@@ -21,12 +21,12 @@ const DesktopHome = ({ isMenuOpen, setIsMenuOpen }: Props) => {
     const [linkedin, setLinkedin] = useState(false);
 
     return <>
-        <Stack bg={bgSecondary} justifyContent='space-between' padding={{ base: '10px 5%', lg: '50px 5%' }} direction={{ base: 'column', md: 'row' }} height='100vh'>
-            <VStack justifyContent='space-between' flex='1' >
+        <Stack bg={bgSecondary} justifyContent='space-between' padding={{ base: '10px 5%', lg: '50px 5%' }} direction={{ base: 'column', md: 'row' }} height='100vh' maxH='100vh' overflow='hidden'>
+            <VStack justifyContent='space-between' flex='1'>
                 <Box>
-                    <Heading width='100%' fontSize={{ base: '28px', lg: '48px' }} margin='15px 0' fontWeight='500'>Hello, I'm <br /> Destiny Ayomah.</Heading>
+                    <Heading width='100%' fontSize={{ base: '28px', lg: '48px' }} margin='15px 0' color='white' fontWeight='500'>Hello, I'm <br /> Destiny Ayomah.</Heading>
 
-                    <Text width='90%' fontWeight='400' fontSize={{ base: '12px', lg: '16px' }} color={textPrimary} lineHeight='2'>
+                    <Text width='70%' fontWeight='400' fontSize={{ base: '12px', lg: '16px' }} color={textPrimary} lineHeight='2'>
                         I'm a <Text display='inline' color='white'>Full Stack Software Engineer</Text>, close on more than <Text display='inline' color='white'>half a decade</Text> of experience. I've got over <Text display='inline' color='white'>100 websites</Text> live utilizing my <Text display='inline' color='white'>problem solving skills</Text> with <Text display='inline' color='white'>HTML, CSS, Javascript, Typescript, JQuery, React, MySQL, MongoDB, Express, NodeJs, NestJs, Php, Flutter and Dart!</Text>
                     </Text>
                 </Box>
@@ -90,21 +90,21 @@ const DesktopHome = ({ isMenuOpen, setIsMenuOpen }: Props) => {
                     <Link to='https://github.com/destinyayomah'>
                         <HStack fontSize={{ base: '12px', lg: '16px' }}>
                             <FontAwesomeIcon icon={faGithub} color={textPrimary} />
-                            <Text>GitHub</Text>
+                            <Text color='white'>GitHub</Text>
                         </HStack>
                     </Link>
 
                     <Link to='https://twitter.com/destiny_ayomah?t=HG7VzYclmnbvj5iYZz1qug&s=09'>
                         <HStack fontSize={{ base: '12px', lg: '16px' }}>
                             <FontAwesomeIcon icon={faTwitter} color={textPrimary} />
-                            <Text>Twitter</Text>
+                            <Text color='white'>Twitter</Text>
                         </HStack>
                     </Link>
 
                     <Link to='mailto:lilsoftx@gmail.com'>
                         <HStack fontSize={{ base: '12px', lg: '16px' }}>
-                            <FontAwesomeIcon icon={faEnvelope} />
-                            <Text>Email</Text>
+                            <FontAwesomeIcon color="gray" icon={faEnvelope} />
+                            <Text color='white'>Email</Text>
                         </HStack>
                     </Link>
                 </HStack>
