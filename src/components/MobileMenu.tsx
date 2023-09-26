@@ -41,7 +41,7 @@ const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
                 zIndex='2'
                 bg={bgSecondary}
                 width='100%'
-                height='90%'
+                height='100%'
                 color={textPrimary}
                 spacing='30px'
                 padding='30px'
