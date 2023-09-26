@@ -1,5 +1,5 @@
 import { Box, HStack, Show, SimpleGrid, Text, VStack } from "@chakra-ui/react"
-import { bgPrimary, textPrimary } from "../App"
+import { bgPrimary, bgSecondary, textPrimary } from "../App"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEye } from "@fortawesome/free-solid-svg-icons"
 import { faCodeBranch } from "@fortawesome/free-solid-svg-icons/faCodeBranch"
@@ -22,7 +22,7 @@ const Work = ({ isMenuOpen, setIsMenuOpen }: Props) => {
     }
 
     return <>
-        <Box padding='15px 5%' overflow='auto' css={hiddenScrollbar} >
+        <Box padding='15px 5%' overflow='auto' css={hiddenScrollbar} bg={bgSecondary} minH='100vh'>
             <Show below="md">
                 <HStack>
                     <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
