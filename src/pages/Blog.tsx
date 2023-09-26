@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
-const Article = () => {
+const Blog = () => {
     return <>
         <VStack bg={bgSecondary} height='100vh' justifyContent='center'>
             <Heading color='white'>COMING SOON</Heading>
@@ -13,4 +13,4 @@ const Article = () => {
     </>
 }
 
-export default Article
+export default Blog

@@ -3,7 +3,7 @@ import './App.css'
 import Home from './pages/Home'
 import Work from './pages/Work';
 import { useState } from 'react';
-import Article from './pages/Article';
+import Blog from './pages/Blog';
 
 export const textPrimary = '#777778';
 export const bgPrimary = '#151515';
@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />} />
         <Route path='/work' element={<Work isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />} />
-        <Route path='/article' element={<Article />} />
+        <Route path='/blog' element={<Blog />} />
       </Routes>
     </BrowserRouter>
   </>
