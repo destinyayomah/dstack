@@ -29,8 +29,8 @@ const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
 
     return <>
         <HStack justifyContent='space-between' width='100%'>
-            <Text fontSize='24px' fontWeight='600'>Dstack.</Text>
-            <FontAwesomeIcon fontSize='24px' icon={isMenuOpen ? faTimes : faBars} onClick={toggleMenu} />
+            <Text fontSize='24px' color='white' fontWeight='600'>Dstack.</Text>
+            <FontAwesomeIcon fontSize='24px' color="white" icon={isMenuOpen ? faTimes : faBars} onClick={toggleMenu} />
         </HStack>
 
         {isMenuOpen &&

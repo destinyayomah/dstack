@@ -17,12 +17,12 @@ export const MobileHome = ({ isMenuOpen, setIsMenuOpen }: Props) => {
 
 
     return <>
-        <VStack padding='15px 5%' bg={bgSecondary}>
+        <VStack padding='15px 5%' bg={bgSecondary} height='100vh' justifyContent='space-between'>
             <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
             <Avatar src={destinyAlt} size='xl' />
 
-            <Heading width='100%' fontSize='24px' textAlign='center' margin='15px 0' fontWeight='500'>Hello, I'm <br /> Destiny Ayomah.</Heading>
+            <Heading width='100%' fontSize='24px' textAlign='center' margin='15px 0' color='white' fontWeight='500'>Hello, I'm <br /> Destiny Ayomah.</Heading>
 
             <Text fontWeight='400' maxWidth='500px' fontSize='11px' color={textPrimary} textAlign='center' lineHeight='1.8'>
                 I'm a <Text display='inline' color='white'>Full Stack Software Engineer</Text>, close on more than <Text display='inline' color='white'>half a decade</Text> of experience. I've got over <Text display='inline' color='white'>100 websites</Text> live utilizing my <Text display='inline' color='white'>problem solving skills</Text> with <Text display='inline' color='white'>HTML, CSS, Javascript, Typescript, JQuery, React, MySQL, MongoDB, Express, NodeJs, NestJs, Php, Flutter and Dart!</Text>
