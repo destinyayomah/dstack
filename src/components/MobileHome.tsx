@@ -1,7 +1,7 @@
 import { Avatar, Button, HStack, Heading, Text, VStack } from "@chakra-ui/react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import destinyAlt from '../assets/destiny-tint.png'
-import { textPrimary } from "../App"
+import { bgSecondary, textPrimary } from "../App"
 import { Link } from "react-router-dom"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter"
@@ -17,7 +17,7 @@ export const MobileHome = ({ isMenuOpen, setIsMenuOpen }: Props) => {
 
 
     return <>
-        <VStack padding='15px 5%'>
+        <VStack padding='15px 5%' bg={bgSecondary}>
             <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
             <Avatar src={destinyAlt} size='xl' />

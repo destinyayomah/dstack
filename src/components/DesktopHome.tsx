@@ -1,6 +1,6 @@
 import { Avatar, Box, HStack, Heading, Show, Stack, Text, VStack } from "@chakra-ui/react"
 import destinyAlt from '../assets/destiny-tint.png'
-import { textPrimary } from "../App"
+import { bgSecondary, textPrimary } from "../App"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons/faTwitter"
@@ -21,7 +21,7 @@ const DesktopHome = ({ isMenuOpen, setIsMenuOpen }: Props) => {
     const [linkedin, setLinkedin] = useState(false);
 
     return <>
-        <Stack justifyContent='space-between' padding={{ base: '10px 5%', lg: '50px 5%' }} direction={{ base: 'column', md: 'row' }} height='100vh'>
+        <Stack bg={bgSecondary} justifyContent='space-between' padding={{ base: '10px 5%', lg: '50px 5%' }} direction={{ base: 'column', md: 'row' }} height='100vh'>
             <VStack justifyContent='space-between' flex='1' >
                 <Box>
                     <Heading width='100%' fontSize={{ base: '28px', lg: '48px' }} margin='15px 0' fontWeight='500'>Hello, I'm <br /> Destiny Ayomah.</Heading>
