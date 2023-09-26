@@ -28,14 +28,16 @@ export const MobileHome = ({ isMenuOpen, setIsMenuOpen }: Props) => {
                 I'm a <Text display='inline' color='white'>Full Stack Software Engineer</Text>, close on more than <Text display='inline' color='white'>half a decade</Text> of experience. I've got over <Text display='inline' color='white'>100 websites</Text> live utilizing my <Text display='inline' color='white'>problem solving skills</Text> with <Text display='inline' color='white'>HTML, CSS, Javascript, Typescript, JQuery, React, MySQL, MongoDB, Express, NodeJs, NestJs, Php, Flutter and Dart!</Text>
             </Text>
 
-            <Button
-                fontSize='12px'
-                padding='0 30px'
-                borderRadius='3px'
-                margin='20px 0'
-            >
-                My Work
-            </Button>
+            <Link to='/work'>
+                <Button
+                    fontSize='12px'
+                    padding='0 30px'
+                    borderRadius='3px'
+                    margin='20px 0'
+                >
+                    My Work
+                </Button>
+            </Link>
 
             <HStack width='100%' spacing='20px' justifyContent='center'>
                 <Link to='https://github.com/destinyayomah'>

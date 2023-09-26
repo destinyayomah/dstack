@@ -63,7 +63,7 @@ const MobileMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
                     <Text _hover={{ color: 'white' }}>LinkedIn</Text>
                 </Link>
 
-                <Text color='white' fontWeight='600'>Connect With Me</Text>
+                <Text color='white' fontWeight='600' marginTop='30px'>Connect With Me</Text>
 
                 <HStack width='100%' spacing='20px' justifyContent='center'>
                     <Link to='https://github.com/destinyayomah'>
